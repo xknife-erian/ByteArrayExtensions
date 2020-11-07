@@ -4,6 +4,7 @@
 using System;
 using System.Numerics;
 using BenchmarkDotNet;
+using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Tasks;
 using IllyriadGames.ByteArrayExtensions;
 
