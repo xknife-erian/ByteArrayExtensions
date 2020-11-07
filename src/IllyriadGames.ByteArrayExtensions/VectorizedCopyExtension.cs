@@ -38,7 +38,7 @@ namespace IllyriadGames.ByteArrayExtensions
         /// <remarks>
         /// Code must be optimized, in release mode and <see cref="Vector"/>.IsHardwareAccelerated must be true for the performance benefits.
         /// </remarks>
-        public unsafe static void VectorizedCopy(this byte[] src, int srcOffset, byte[] dst, int dstOffset, int count)
+        public static unsafe void VectorizedCopy(this byte[] src, int srcOffset, byte[] dst, int dstOffset, int count)
         {
 #if !DEBUG
             // Tests need to check even if IsHardwareAccelerated == false
